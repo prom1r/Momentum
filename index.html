@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="css/owfont-regular.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>momentum</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="player">
+            <div class="player-controls">
+                <button class="play-prev player-icon"></button>
+                <button class="play player-icon"></button>
+                <button class="play-next player-icon"></button>
+
+                <div class="audio-controls">
+                    <div class="song-title"></div>
+                    <input type="range" id="progress-bar" min="0" max="" value="0">
+                    <div class="currentTime"></div>
+                    <div class="durationTime"></div>
+                    <div class="icon-volume"></div>
+                    <div class="volume-container">
+                        <div class="volume-slider">
+                            <div class="volume-percentage"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <ul class="play-list"></ul>
+        </div>
+        <div class="weather">
+            <input type="text" class="city" value="Minsk">
+            <i class="weather-icon owf"></i>
+            <div class="weather-error"></div>
+            <div class="description-container">
+                <span class="temperature"></span>
+                <span class="weather-description"></span>
+                <span class="wind-speed"></span>
+                <span class="humidity"></span>
+            </div>
+            <div class="wind"></div>
+            <div class="humidity"></div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="slider-icons">
+            <button class="slide-prev slider-icon"></button>
+            <button class="slide-next slider-icon"></button>
+        </div>
+        <time class="time"></time>
+        <date class="date"></date>
+        <div class="greeting-container">
+            <span class="greeting"></span>
+            <input type="text" class="name" placeholder="[Enter name]">
+        </div>
+    </main>
+    <footer class="footer">
+        <button class="change-quote"></button>
+        <div>
+            <div class="quote"></div>
+            <div class="author"></div>
+        </div>
+        <div class="todo-visile">
+            <h2 class="todo-h1">todo</h2>
+        </div>
+        <div class="todo_list">
+            <h1>ToDo list</h1>
+            <h5>(right-clicking to delete an entry)</h5>
+            <div class="create_new_todo">
+                <input type="text" class="message input-todo-text" placeholder="Description">
+                <button class="add">Add to-do list</button>
+            </div>
+            <div class="wrapper">
+                <ul class="todo"></ul>
+            </div>
+        </div>
+        <div class="settings">
+            <img src='assets/svg/settings.svg' alt="settings">
+            <div class="settings-list">
+                <h2>Select language</h2>
+                <form class="settingsText">
+                    <input type="radio" id="en" name="lenguich" value="en" checked>
+                    <label for="en">English</label><br>
+                    <input type="radio" id="ru" name="lenguich" value="ru">
+                    <label for="ru">Russian</label><br>
+                </form>
+
+            </div>
+        </div>
+        <div class="rs-shool">
+            <a href="https://github.com/prom1r">
+                <img class="github" src="assets/svg/github.png" alt="github">
+            </a>
+            <h3>2021</h3>
+            <a href="https://rs.school/js/">
+                <img class="rs" src="assets/svg/rs_school_js.svg" alt="rs-shool">
+            </a>
+        </div>
+    </footer>
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="custom-player.js"></script>
+    <script src="todo.js"></script>
+    <script src="js/settings.js"></script>
+
+
+
+</body>
+
+</html>
